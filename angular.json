@@ -82,19 +82,19 @@
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
-						"production": {
-							"browserTarget": "ald-portfolio:build:production"
+            "production": {
+              "buildTarget": "ald-portfolio:build:production"
 						},
-						"development": {
-							"browserTarget": "ald-portfolio:build:development"
+            "development": {
+              "buildTarget": "ald-portfolio:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"browserTarget": "ald-portfolio:build"
+          "options": {
+            "buildTarget": "ald-portfolio:build"
 					}
 				},
 				"test": {

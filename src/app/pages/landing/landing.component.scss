@@ -1,0 +1,25 @@
+@use "../../../styles/variables";
+
+$header-horizontal-spacing: 5rem;
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: $header-horizontal-spacing;
+    padding-right: $header-horizontal-spacing;
+    gap: $header-horizontal-spacing;
+}
+
+.header-text {
+    white-space: nowrap;
+}
+
+.header-line {
+    height: 0.5rem;
+    width: 100%;
+    background-color: variables.$color-primary;
+    border-radius: 0.25rem;
+}

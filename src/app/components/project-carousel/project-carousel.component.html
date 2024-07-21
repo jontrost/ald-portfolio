@@ -1,0 +1,8 @@
+<div class="carousel">
+    @for (preview of projectPreviews; track $index) {
+        <div class="preview">
+            <img [src]="preview.imageSrc">
+            <span>{{preview.description}}</span>
+        </div>
+    }
+</div>

@@ -1,6 +1,6 @@
-@use "./styles/_reset.scss";
-@use "./styles/_variables.scss";
-@use "./styles/_typography.scss";
+@use "./styles/reset";
+@use "./styles/variables";
+@use "./styles/typography";
 
 html {
     height: 100%;

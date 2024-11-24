@@ -42,4 +42,11 @@ h6 {
 a,
 button {
     cursor: pointer;
+
+    &:focus-visible {
+        outline-color: variables.$color-text;
+        outline-style: solid;
+        outline-width: 2px;
+        outline-offset: 1px;
+    }
 }

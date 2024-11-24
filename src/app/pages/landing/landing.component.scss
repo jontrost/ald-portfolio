@@ -48,6 +48,7 @@ $spacing: 3rem;
     grid-area: project-preview;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .project-preview-image {
@@ -58,7 +59,13 @@ $spacing: 3rem;
     object-fit: contain;
 }
 
-.project-menu-wrapper {
+.project-preview-link {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.project-menu {
     grid-area: project-menu;
     display: flex;
     flex-direction: column;
@@ -67,6 +74,21 @@ $spacing: 3rem;
     justify-content: center;
 }
 
+.project-button {
+    width: fit-content;
+    transition: transform 150ms ease-in-out;
+
+    &.selected {
+        font-weight: bold;
+        transform: translateX(1rem);
+    }
+
+    &:hover {
+        color: variables.$color-accent;
+    }
+}
+
 .contact {
+    width: fit-content;
     grid-area: contact;
 }

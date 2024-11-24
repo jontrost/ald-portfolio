@@ -4,7 +4,7 @@ export const PROJECT_PREVIEWS = [
 		description: "Brief project summary text. (1)",
 	},
 	{
-		imageSrc: "/assets/placeholder-image.jpg",
+		imageSrc: "/assets/placeholder-image-alternate.jpg",
 		description: "Brief project summary text. (2)",
 	},
 	{
@@ -12,15 +12,15 @@ export const PROJECT_PREVIEWS = [
 		description: "Brief project summary text. (3)",
 	},
 	{
-		imageSrc: "/assets/placeholder-image.jpg",
+		imageSrc: "/assets/placeholder-image-alternate.jpg",
 		description: "Brief project summary text. (4)",
 	},
-    {
+	{
 		imageSrc: "/assets/placeholder-image.jpg",
 		description: "Brief project summary text. (5)",
 	},
-    {
-		imageSrc: "/assets/placeholder-image.jpg",
+	{
+		imageSrc: "/assets/placeholder-image-alternate.jpg",
 		description: "Brief project summary text. (6)",
 	},
 ];

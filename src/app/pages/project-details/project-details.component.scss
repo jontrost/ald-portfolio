@@ -1,0 +1,35 @@
+@use "../../../styles/variables";
+
+$spacing: 3rem;
+
+.page-container {
+    height: 100%;
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 25rem 0.5rem 1fr; 
+    grid-template-rows: auto 1fr; 
+    gap: $spacing; 
+    grid-template-areas:
+        "back . ."
+        "text divider images"; 
+}
+
+.back-link {
+    grid-area: back;
+}
+
+.project-text {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    grid-area: divider;
+    background-color: variables.$color-secondary;
+    border-radius: 0.25rem;
+}
+
+.project-images {
+    grid-area: images;
+}

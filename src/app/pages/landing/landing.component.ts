@@ -1,14 +1,16 @@
 import { Component, signal } from "@angular/core";
-import { PROJECT_PREVIEWS } from "../../constants/project-previews.constants";
-import type { ProjectPreview } from "../../models/project-preview.model";
+import { RouterModule } from "@angular/router";
+import { PROJECTS } from "../../constants/project.constants";
+import type { Project } from "../../models/project.model";
 
 @Component({
 	selector: "ald-landing",
+	imports: [RouterModule],
 	templateUrl: "./landing.component.html",
-	styleUrl: "./landing.component.scss",
+	styleUrl: "./landing.component.scss"
 })
 export class LandingComponent {
-	readonly projectPreviews: ProjectPreview[] = PROJECT_PREVIEWS;
+	readonly projects: Project[] = PROJECTS;
 	selectedProjectPreviewIndex = signal<number>(0);
 
 	selectProjectPreview(index: number) {

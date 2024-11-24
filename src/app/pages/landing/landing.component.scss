@@ -5,15 +5,14 @@ $spacing: 3rem;
 .page-container {
     height: 100%;
     width: 100%;
-    padding: $spacing;
     display: grid; 
     grid-template-columns: auto 1fr; 
     grid-template-rows: auto 1fr auto; 
     gap: $spacing; 
     grid-template-areas: 
-      "header header"
-      "project-menu project-preview"
-      "contact project-preview"; 
+        "header header"
+        "project-menu project-preview"
+        "contact project-preview"; 
 }
 
 .container {
@@ -59,12 +58,6 @@ $spacing: 3rem;
     object-fit: contain;
 }
 
-.project-preview-link {
-    position: absolute;
-    top: 50%;
-    left: 0;
-}
-
 .project-menu {
     grid-area: project-menu;
     display: flex;
@@ -74,7 +67,7 @@ $spacing: 3rem;
     justify-content: center;
 }
 
-.project-button {
+.project-link {
     width: fit-content;
     transition: transform 150ms ease-in-out;
 
@@ -82,13 +75,13 @@ $spacing: 3rem;
         font-weight: bold;
         transform: translateX(1rem);
     }
-
-    &:hover {
-        color: variables.$color-accent;
-    }
 }
 
 .contact {
     width: fit-content;
     grid-area: contact;
+
+    &:hover {
+        font-weight: bold;
+    }
 }

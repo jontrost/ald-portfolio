@@ -3,11 +3,11 @@ import { PROJECT_PREVIEWS } from "../../constants/project-previews.constants";
 import type { ProjectPreview } from "../../models/project-preview.model";
 
 @Component({
-    selector: "ald-project-carousel",
-    imports: [],
-    templateUrl: "./project-carousel.component.html",
-    styleUrl: "./project-carousel.component.scss"
+	selector: "ald-project-menu",
+	imports: [],
+	templateUrl: "./project-menu.component.html",
+	styleUrl: "./project-menu.component.scss",
 })
-export class ProjectCarouselComponent {
+export class ProjectMenuComponent {
 	projectPreviews: ProjectPreview[] = PROJECT_PREVIEWS;
 }

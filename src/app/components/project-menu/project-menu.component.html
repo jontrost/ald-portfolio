@@ -1,0 +1,8 @@
+<div class="menu-container">
+    <h2>Projects</h2>
+    <ul>
+        @for (preview of projectPreviews; track $index) {
+            <li>{{ preview.description }}</li>
+        }
+    </ul>
+</div>

@@ -4,7 +4,7 @@
         <hr class="header-line">
     </div>
     <div class="project-menu">
-        <h2>Projects</h2>
+        <h2 class="project-menu-header">Projects</h2>
         @for (preview of projects; track $index) {
             <!-- figure out how to make biome format html -->
             <a
@@ -21,5 +21,6 @@
         <!-- figure out a way to do this without reloading images each time -->
         <img class="project-preview-image" [src]="projects[selectedProjectPreviewIndex()].previewImageSrc">
     </div>
+    <!-- Update this href -->
     <a href="http://localhost:4200" class="contact">Contact Me</a>
 </div>

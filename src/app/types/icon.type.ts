@@ -1,1 +1,1 @@
-export type Icon = "arrow-circle-left" | "arrow-circle-right";
+export type Icon = "chevron-left" | "chevron-right";

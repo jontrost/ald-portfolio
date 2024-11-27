@@ -1,5 +1,8 @@
 <div class="page-container">
-    <a class="back-link" routerLink="/">Back</a>
+    <a class="back-link" routerLink="/">
+        <ald-icon class="icon" icon="chevron-left"></ald-icon>
+        Back
+    </a>
     <div class="project-text">
         <h1>{{ project.name }}</h1>
         @if (project.mediumDescription != null) {
@@ -7,19 +10,21 @@
             <i class="medium-description">{{ project.mediumDescription}}</i>
         }
         <p>{{ project.description }}</p>
-        @if (project.detailsImagesSrcs.length > 1) {
-            <!-- Add alt text & hover/click animations -->
-            <!-- Try out other icon variants -->
-            <button (click)="selectPreviousImage()">
-                <ald-icon icon="arrow-circle-left"></ald-icon>
-            </button>
-            <button (click)="selectNextImage()">
-                <ald-icon icon="arrow-circle-right"></ald-icon>
-            </button>
-        }
     </div>
     <div class="divider"></div>
     <div class="project-images">
         <img class="project-image" [src]="project.detailsImagesSrcs[currentImageIndex()]">
+        @if (project.detailsImagesSrcs.length > 1) {
+            <div class="button-container">
+                <button class="image-selection-button" (click)="selectPreviousImage()">
+                    <ald-icon class="icon" icon="chevron-left"></ald-icon>
+                    Previous
+                </button>
+                <button class="image-selection-button" (click)="selectNextImage()">
+                    Next
+                    <ald-icon class="icon" icon="chevron-right"></ald-icon>
+                </button>
+            </div>
+        }
     </div>
 </div>

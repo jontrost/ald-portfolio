@@ -1,12 +1,13 @@
-import { Component, type OnInit, computed, inject, signal } from "@angular/core";
+import { Component, type OnInit, inject, signal } from "@angular/core";
 import { ActivatedRoute, Router, RouterModule } from "@angular/router";
 import { PROJECTS } from "../../constants/project.constants";
 import type { Project } from "../../models/project.model";
 import { IconComponent } from "../../components/icon/icon.component";
+import { NgOptimizedImage } from "@angular/common";
 
 @Component({
 	selector: "ald-project-details",
-	imports: [IconComponent, RouterModule],
+	imports: [IconComponent, NgOptimizedImage, RouterModule],
 	templateUrl: "./project-details.component.html",
 	styleUrl: "./project-details.component.scss"
 })
@@ -14,7 +15,6 @@ export class ProjectDetailsComponent implements OnInit {
 	readonly route = inject(ActivatedRoute);
 	readonly router = inject(Router);
 	currentImageIndex = signal<number>(0);
-	// currentImage = computed(() => this.project.images[this.currentImageIndex()]);
 	project: Project;
 
 	// Fix flicker on load

@@ -18,8 +18,11 @@
         }
     </div>
     <div class="project-preview">
-        <!-- figure out a way to do this without reloading images each time -->
-        <img class="project-preview-image" [src]="projects[selectedProjectPreviewIndex()].previewImageSrc">
+        @for (project of projects; track $index) {
+            @if ($index === selectedProjectPreviewIndex()) {
+                <img class="project-preview-image" [ngSrc]="project.previewImageSrc" [priority]="$index === 0" fill>
+            }
+        }
     </div>
     <!-- Update this href -->
     <a href="http://localhost:4200" class="contact">Contact Me</a>

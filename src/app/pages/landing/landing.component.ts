@@ -2,10 +2,11 @@ import { Component, signal } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { PROJECTS } from "../../constants/project.constants";
 import type { Project } from "../../models/project.model";
+import { NgOptimizedImage } from "@angular/common";
 
 @Component({
 	selector: "ald-landing",
-	imports: [RouterModule],
+	imports: [NgOptimizedImage, RouterModule],
 	templateUrl: "./landing.component.html",
 	styleUrl: "./landing.component.scss"
 })

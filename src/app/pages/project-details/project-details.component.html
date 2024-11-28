@@ -5,15 +5,25 @@
     </a>
     <div class="project-text">
         <h1>{{ project.name }}</h1>
-        @if (project.mediumDescription != null) {
-            <!-- only italicize the title -->
-            <i class="medium-description">{{ project.mediumDescription}}</i>
+        @if (project.paintingName != null || project.paintingMedium != null) {
+            <div class="painting-metadata">
+                @if (project.paintingName != null) {
+                    <i>{{ project.paintingName }}</i>
+                }
+                @if (project.paintingMedium != null) {
+                    <span>, {{ project.paintingMedium }}</span>
+                }
+            </div>
         }
         <p>{{ project.description }}</p>
     </div>
     <div class="divider"></div>
     <div class="project-images">
-        <img class="project-image" [src]="project.detailsImagesSrcs[currentImageIndex()]">
+        @for (imageSrc of project.detailsImagesSrcs; track $index) {
+            @if ($index === currentImageIndex()) {
+                <img class="project-image" [ngSrc]="project.detailsImagesSrcs[$index]" [priority]="$index === 0" fill>
+            }
+        }
         @if (project.detailsImagesSrcs.length > 1) {
             <div class="button-container">
                 <button class="image-selection-button" (click)="selectPreviousImage()">

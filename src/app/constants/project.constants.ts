@@ -122,7 +122,8 @@ export const PROJECTS: Project[] = [
             I wanted to commemorate my time living in the beautiful city of Saint Paul, Minnesota. This is my
             first painted work of realism in architecture, inspired by a photo taken by Josh Hild.
         `,
-		mediumDescription: "Downtown, oil on loose canvas",
+		paintingName: "Downtown",
+		paintingMedium: "oil on loose canvas",
 		previewImageSrc: "/assets/projects/painting/preview.jpg",
 		detailsImagesSrcs: ["/assets/projects/painting/preview.jpg"],
 		route: "painting"

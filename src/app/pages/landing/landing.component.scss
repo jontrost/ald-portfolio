@@ -1,4 +1,5 @@
 @use "../../../styles/variables";
+@use "../../../styles/typography";
 
 $spacing: 3rem;
 
@@ -68,8 +69,10 @@ $spacing: 3rem;
 }
 
 .project-link {
+    @extend %h6;
     width: fit-content;
     transition: transform 150ms ease-in-out;
+    padding: 0.125rem;
 
     &.selected {
         font-weight: bold;

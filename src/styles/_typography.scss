@@ -1,11 +1,11 @@
 @use "../styles/variables.scss";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 $font-scale: 1.15;
 $font-dynamic-size-screen-start-width: 20rem;
 $font-dynamic-size-screen-end-width: variables.$breakpoint-large;
 $font-size-body-min: 0.875rem;
-$font-size-body-max: 1.125rem;
+$font-size-body-max: 1.1875rem;
 $font-size-small-min: calc($font-size-body-min / $font-scale);
 $font-size-small-max: calc($font-size-body-max / $font-scale);
 $font-size-h6-min: $font-size-body-min * $font-scale;
@@ -84,7 +84,8 @@ $font-size-h1-max: $font-size-h2-max * $font-scale;
 }
 
 %body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
     font-size: var(--font-size-body);
 }
 

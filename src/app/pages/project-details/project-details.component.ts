@@ -17,17 +17,10 @@ export class ProjectDetailsComponent implements OnInit {
 	currentImageIndex = signal<number>(0);
 	project: Project;
 
-	// Fix flicker on load
 	ngOnInit() {
 		const { projectName } = this.route.snapshot.params;
-		const project = PROJECTS.find((project) => project.route === projectName);
-
-		if (project == null) {
-			// Fix this so that the error is not thrown in the template since this is async
-			this.router.navigate(["/"]);
-		} else {
-			this.project = project;
-		}
+		// biome-ignore lint/style/noNonNullAssertion: Route guard ensures this will always be found
+		this.project = PROJECTS.find((project) => project.route === projectName)!;
 	}
 
 	selectPreviousImage() {

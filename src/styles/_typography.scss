@@ -83,8 +83,6 @@ $font-size-h1-max: $font-size-h2-max * $font-scale;
     );
 }
 
-// Make headers uppercase and different font
-
 %body {
     font-family: "Poppins", sans-serif;
     font-size: var(--font-size-body);

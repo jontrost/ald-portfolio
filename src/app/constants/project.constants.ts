@@ -105,11 +105,9 @@ export const PROJECTS: Project[] = [
             printed as stickers distributed at the event. To create the promotional banners, I utilized both
             composition design techniques and my technical painting skills.
         `,
-		// Switch this with the transparent version
-		previewImageSrc: "/assets/projects/alpha-delta-pi-graphics/preview.jpg",
+		previewImageSrc: "/assets/projects/alpha-delta-pi-graphics/preview.png",
 		detailsImagesSrcs: [
-			// Switch this with the transparent version
-			"/assets/projects/alpha-delta-pi-graphics/preview.jpg",
+			"/assets/projects/alpha-delta-pi-graphics/preview.png",
 			"/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-1.jpg",
 			"/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-2.jpg",
 			"/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-3.png"

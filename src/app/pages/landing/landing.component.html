@@ -1,5 +1,6 @@
 <div class="page-container">
     <div class="header">
+        <!-- Add logo here -->
         <h1 class="header-text">Amanda Lee Design</h1>
         <hr class="header-line">
     </div>
@@ -19,7 +20,12 @@
     <div class="project-preview">
         @for (project of projects; track $index) {
             @if ($index === selectedProjectPreviewIndex()) {
-                <img class="project-preview-image" [ngSrc]="project.previewImageSrc" [priority]="$index === 0" fill>
+                <img
+                    class="project-preview-image"
+                    [ngSrc]="project.previewImage.src"
+                    [priority]="$index === 0"
+                    [height]="project.previewImage.height"
+                    [width]="project.previewImage.width">
             }
         }
     </div>

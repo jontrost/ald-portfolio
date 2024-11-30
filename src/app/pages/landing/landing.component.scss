@@ -1,19 +1,31 @@
 @use "../../../styles/variables";
 @use "../../../styles/typography";
 
-$spacing: 3rem;
+$large-spacing: 3rem;
+$small-spacing: 2rem;
 
 .page-container {
     height: 100%;
     width: 100%;
-    display: grid; 
+    display: grid;
+    gap: $large-spacing;
     grid-template-columns: auto minmax(0, 1fr); 
     grid-template-rows: auto minmax(0, 1fr) auto; 
-    gap: $spacing; 
     grid-template-areas: 
         "header header"
         "project-menu project-preview"
-        "contact project-preview"; 
+        "contact project-preview";
+
+    @media only screen and (max-width: variables.$breakpoint-small) {
+        gap: $small-spacing; 
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto auto auto minmax(0, 1fr); 
+        grid-template-areas: 
+            "header"
+            "contact"
+            "project-menu"
+            "project-preview";
+    }
 }
 
 .container {
@@ -29,7 +41,11 @@ $spacing: 3rem;
     grid-area: header;
     align-self: flex-start;
     align-items: center;
-    gap: $spacing;
+    gap: $large-spacing;
+
+    @media only screen and (max-width: variables.$breakpoint-small) {
+        gap: $small-spacing; 
+    }
 }
 
 .header-text {
@@ -48,11 +64,19 @@ $spacing: 3rem;
     grid-area: project-preview;
     display: flex;
     justify-content: center;
-    position: relative;
 }
 
 .project-preview-image {
+    height: auto;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     object-fit: contain;
+    align-self: center;
+
+    @media only screen and (max-width: variables.$breakpoint-small) {
+        align-self: flex-start;
+    }
 }
 
 .project-menu {

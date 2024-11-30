@@ -25,13 +25,13 @@ export class ProjectDetailsComponent implements OnInit {
 
 	selectPreviousImage() {
 		this.currentImageIndex.update((currentIndex) =>
-			currentIndex - 1 === -1 ? this.project.detailsImagesSrcs.length - 1 : currentIndex - 1
+			currentIndex - 1 === -1 ? this.project.detailsImages.length - 1 : currentIndex - 1
 		);
 	}
 
 	selectNextImage() {
 		this.currentImageIndex.update((currentIndex) =>
-			currentIndex + 1 === this.project.detailsImagesSrcs.length ? 0 : currentIndex + 1
+			currentIndex + 1 === this.project.detailsImages.length ? 0 : currentIndex + 1
 		);
 	}
 }

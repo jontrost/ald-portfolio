@@ -1,25 +1,65 @@
+import type { Image } from "../models/image.model";
 import type { Project } from "../models/project.model";
 
 // Compress the images before releasing
+const ICON_LIBRARY_PREVIEW_IMAGE: Image = {
+	src: "/assets/projects/icon-library/preview.png",
+	width: 2050,
+	height: 1727
+};
+
+const SPRINT_BLOCK_PARTY_PREVIEW_IMAGE: Image = {
+	src: "/assets/projects/sprint-block-party/preview.png",
+	width: 2251,
+	height: 2251
+};
+
+const PUMPED_UP_KICKS_LYRIC_BOOK_PREVIEW_IMAGE: Image = {
+	src: "/assets/projects/pumped-up-kicks-lyric-book/preview.png",
+	width: 2041,
+	height: 1953
+};
+
+const ALPHA_DELTA_PI_GRAPHICS_PREVIEW_IMAGE: Image = {
+	src: "/assets/projects/alpha-delta-pi-graphics/preview.png",
+	width: 500,
+	height: 500
+};
+
+const PAINTING_PREVIEW_IMAGE: Image = {
+	src: "/assets/projects/painting/preview.jpg",
+	width: 1876,
+	height: 2475
+};
+
 export const PROJECTS: Project[] = [
 	{
 		name: "Icon Library",
+		route: "icon-library",
 		description: `
             This icon library is designed for visual communications, including social media graphics, printed
             materials, presentations, and websites. It effectively presents a variety of concepts through clean
             and simple illustrations. The designs incorporate lines and round shapes, with elegantly curved
             corners on both the icons and their containers, creating a soft and cohesive look.
         `,
-		previewImageSrc: "/assets/projects/icon-library/preview.png",
-		detailsImagesSrcs: [
-			"/assets/projects/icon-library/preview.png",
-			"/assets/projects/icon-library/icon-library-1.png",
-			"/assets/projects/icon-library/icon-library-2.jpg"
-		],
-		route: "icon-library"
+		previewImage: ICON_LIBRARY_PREVIEW_IMAGE,
+		detailsImages: [
+			ICON_LIBRARY_PREVIEW_IMAGE,
+			{
+				src: "/assets/projects/icon-library/icon-library-1.png",
+				width: 5000,
+				height: 3750
+			},
+			{
+				src: "/assets/projects/icon-library/icon-library-2.jpg",
+				width: 5000,
+				height: 3750
+			}
+		]
 	},
 	{
 		name: "Ethereal Dance",
+		route: "ethereal-dance",
 		description: `
             Through research and personal experimentation, I sought ways to mimic or depict dance through graphics,
             considering questions such as what design elements can convey movement while referencing the human body
@@ -28,19 +68,47 @@ export const PROJECTS: Project[] = [
             alignments of the body captured during movement and dance. The branding and marketing of Ethereal Dance
             Company showcase how design can be integrated with dance in the real world.
         `,
-		previewImageSrc: "/assets/projects/ethereal-dance/preview.jpg",
-		detailsImagesSrcs: [
-			"/assets/projects/ethereal-dance/ethereal-dance-1.gif",
-			"/assets/projects/ethereal-dance/ethereal-dance-2.png",
-			"/assets/projects/ethereal-dance/ethereal-dance-3.png",
-			"/assets/projects/ethereal-dance/ethereal-dance-4.png",
-			"/assets/projects/ethereal-dance/ethereal-dance-5.png",
-			"/assets/projects/ethereal-dance/ethereal-dance-6.png"
-		],
-		route: "ethereal-dance"
+		previewImage: {
+			src: "/assets/projects/ethereal-dance/preview.jpg",
+			width: 1200,
+			height: 900
+		},
+		detailsImages: [
+			{
+				src: "/assets/projects/ethereal-dance/ethereal-dance-1.gif",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/ethereal-dance/ethereal-dance-2.png",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/ethereal-dance/ethereal-dance-3.png",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/ethereal-dance/ethereal-dance-4.png",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/ethereal-dance/ethereal-dance-5.png",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/ethereal-dance/ethereal-dance-6.png",
+				width: 0,
+				height: 0
+			}
+		]
 	},
 	{
 		name: "Characters of Carnival",
+		route: "characters-of-carnival",
 		description: `
             This project was done for the exhibit "Carnival as Resistance," which depicted the ritual and artifacts
             alongside the modern-day practices of Carnival in Antigua and Barbuda. I illustrated the four most
@@ -48,22 +116,62 @@ export const PROJECTS: Project[] = [
             in the parade dress up as these four characters during the annual celebration. The layout of the mural
             was made in collaboration with Hannah Caulkins.
         `,
-		previewImageSrc: "/assets/projects/characters-of-carnival/preview.jpg",
-		detailsImagesSrcs: [
-			"/assets/projects/characters-of-carnival/characters-of-carnival-1.jpg",
-			"/assets/projects/characters-of-carnival/characters-of-carnival-2.jpg",
-			"/assets/projects/characters-of-carnival/characters-of-carnival-3.jpg",
-			"/assets/projects/characters-of-carnival/characters-of-carnival-4.jpg",
-			"/assets/projects/characters-of-carnival/characters-of-carnival-5.jpg",
-			"/assets/projects/characters-of-carnival/characters-of-carnival-6.jpg",
-			"/assets/projects/characters-of-carnival/characters-of-carnival-7.jpg",
-			"/assets/projects/characters-of-carnival/characters-of-carnival-8.jpg",
-			"/assets/projects/characters-of-carnival/characters-of-carnival-9.jpg"
-		],
-		route: "characters-of-carnival"
+		previewImage: {
+			src: "/assets/projects/characters-of-carnival/preview.jpg",
+			width: 0,
+			height: 0
+		},
+		detailsImages: [
+			{
+				src: "/assets/projects/characters-of-carnival/characters-of-carnival-1.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/characters-of-carnival/characters-of-carnival-2.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/characters-of-carnival/characters-of-carnival-3.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/characters-of-carnival/characters-of-carnival-4.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/characters-of-carnival/characters-of-carnival-5.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/characters-of-carnival/characters-of-carnival-6.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/characters-of-carnival/characters-of-carnival-7.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/characters-of-carnival/characters-of-carnival-8.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/characters-of-carnival/characters-of-carnival-9.jpg",
+				width: 0,
+				height: 0
+			}
+		]
 	},
 	{
 		name: "Sprint Block Party",
+		route: "sprint-block-party",
 		description: `
             I designed this identifier for an event on the Sprint Headquarters Campus. The purpose of the event
             was to celebrate the grand opening of a newly renovated building and to recognize the Network team
@@ -73,12 +181,12 @@ export const PROJECTS: Project[] = [
             announcements on TV screens throughout campus. It was also included in the photo booth printed
             pictures you could get at the event.
         `,
-		previewImageSrc: "/assets/projects/sprint-block-party/preview.png",
-		detailsImagesSrcs: ["/assets/projects/sprint-block-party/preview.png"],
-		route: "sprint-block-party"
+		previewImage: SPRINT_BLOCK_PARTY_PREVIEW_IMAGE,
+		detailsImages: [SPRINT_BLOCK_PARTY_PREVIEW_IMAGE]
 	},
 	{
 		name: "Pumped Up Kicks Lyric Book",
+		route: "pumped-up-kicks-lyric-book",
 		description: `
             This publication is centered around the song "Pumped Up Kicks" by Foster the People. The design concept
             is inspired by the song's reference to mental illness in adolescents and school shootings. The
@@ -86,18 +194,34 @@ export const PROJECTS: Project[] = [
             behind the lyrics in the song. The use of grayscale and brighter complementary colors evoke mixed
             emotions contrasted by dullness.        
         `,
-		previewImageSrc: "/assets/projects/pumped-up-kicks-lyric-book/preview.png",
-		detailsImagesSrcs: [
-			"/assets/projects/pumped-up-kicks-lyric-book/preview.png",
-			"/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-1.jpg",
-			"/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-2.jpg",
-			"/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-3.jpg",
-			"/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-4.jpg"
-		],
-		route: "pumped-up-kicks-lyric-book"
+		previewImage: PUMPED_UP_KICKS_LYRIC_BOOK_PREVIEW_IMAGE,
+		detailsImages: [
+			PUMPED_UP_KICKS_LYRIC_BOOK_PREVIEW_IMAGE,
+			{
+				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-1.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-2.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-3.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-4.jpg",
+				width: 0,
+				height: 0
+			}
+		]
 	},
 	{
 		name: "Alpha Delta Pi Graphics",
+		route: "alpha-delta-pi-graphics",
 		description: `
             During my time as the Public Relations Chair for Alpha Delta Pi, I designed several graphics and
             banners to promote university events and messaging. One of my key projects was creating a graphic
@@ -105,25 +229,36 @@ export const PROJECTS: Project[] = [
             printed as stickers distributed at the event. To create the promotional banners, I utilized both
             composition design techniques and my technical painting skills.
         `,
-		previewImageSrc: "/assets/projects/alpha-delta-pi-graphics/preview.png",
-		detailsImagesSrcs: [
-			"/assets/projects/alpha-delta-pi-graphics/preview.png",
-			"/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-1.jpg",
-			"/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-2.jpg",
-			"/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-3.png"
-		],
-		route: "alpha-delta-pi-graphics"
+		previewImage: ALPHA_DELTA_PI_GRAPHICS_PREVIEW_IMAGE,
+		detailsImages: [
+			ALPHA_DELTA_PI_GRAPHICS_PREVIEW_IMAGE,
+			{
+				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-1.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-2.jpg",
+				width: 0,
+				height: 0
+			},
+			{
+				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-3.png",
+				width: 0,
+				height: 0
+			}
+		]
 	},
 	{
 		name: "Painting",
+		route: "painting",
 		description: `
             I wanted to commemorate my time living in the beautiful city of Saint Paul, Minnesota. This is my
             first painted work of realism in architecture, inspired by a photo taken by Josh Hild.
         `,
 		paintingName: "Downtown",
 		paintingMedium: "oil on loose canvas",
-		previewImageSrc: "/assets/projects/painting/preview.jpg",
-		detailsImagesSrcs: ["/assets/projects/painting/preview.jpg"],
-		route: "painting"
+		previewImage: PAINTING_PREVIEW_IMAGE,
+		detailsImages: [PAINTING_PREVIEW_IMAGE]
 	}
 ];

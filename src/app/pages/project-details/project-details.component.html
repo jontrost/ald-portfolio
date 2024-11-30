@@ -19,12 +19,17 @@
     </div>
     <div class="divider"></div>
     <div class="project-images">
-        @for (imageSrc of project.detailsImagesSrcs; track $index) {
+        @for (image of project.detailsImages; track $index) {
             @if ($index === currentImageIndex()) {
-                <img class="project-image" [ngSrc]="project.detailsImagesSrcs[$index]" [priority]="$index === 0" fill>
+                <img
+                    class="project-image"
+                    [ngSrc]="image.src"
+                    [priority]="$index === 0"
+                    [height]="image.height"
+                    [width]="image.width">
             }
         }
-        @if (project.detailsImagesSrcs.length > 1) {
+        @if (project.detailsImages.length > 1) {
             <div class="button-container">
                 <button class="image-selection-button" (click)="selectPreviousImage()">
                     <ald-icon class="icon" icon="chevron-left"></ald-icon>

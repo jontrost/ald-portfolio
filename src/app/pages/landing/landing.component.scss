@@ -39,18 +39,28 @@ $small-spacing: 2rem;
     display: flex;
     width: 100%;
     grid-area: header;
+    justify-content: center;
     align-self: flex-start;
     align-items: center;
     gap: $large-spacing;
+}
+
+.header-logo {
+    display: none;
+    height: 5rem;
 
     @media only screen and (max-width: variables.$breakpoint-small) {
-        gap: $small-spacing; 
+        display: block;
     }
 }
 
 .header-text {
     line-height: 1;
     white-space: nowrap;
+
+    @media only screen and (max-width: variables.$breakpoint-small) {
+        display: none;
+    }
 }
 
 .header-line {
@@ -58,6 +68,10 @@ $small-spacing: 2rem;
     width: 100%;
     background-color: variables.$color-primary;
     border-radius: 0.25rem;
+
+    @media only screen and (max-width: variables.$breakpoint-small) {
+        display: none;
+    }
 }
 
 .project-preview {
@@ -86,6 +100,11 @@ $small-spacing: 2rem;
     height: 100%;
     width: fit-content;
     justify-content: center;
+
+    @media only screen and (max-width: variables.$breakpoint-small) {
+        justify-self: center;
+        align-items: center;
+    }
 }
 
 .project-menu-header {
@@ -96,11 +115,20 @@ $small-spacing: 2rem;
     @extend %h6;
     width: fit-content;
     transition: transform 150ms ease-in-out;
-    padding: 0.125rem;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
 
     &.selected {
         font-weight: bold;
-        transform: translateX(1rem);
+
+        @media only screen and (min-width: variables.$breakpoint-small) {
+            transform: translateX(1rem);
+        }
+    }
+
+    @media only screen and (max-width: variables.$breakpoint-small) {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
     }
 }
 
@@ -108,4 +136,8 @@ $small-spacing: 2rem;
     width: fit-content;
     grid-area: contact;
     text-decoration: underline;
+
+    @media only screen and (max-width: variables.$breakpoint-small) {
+        justify-self: center;
+    }
 }

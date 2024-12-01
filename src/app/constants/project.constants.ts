@@ -3,8 +3,8 @@ import type { Project } from "../models/project.model";
 
 const ICON_LIBRARY_PREVIEW_IMAGE: Image = {
 	src: "/assets/projects/icon-library/preview.png",
-	width: 2050,
-	height: 1727
+	width: 2001,
+	height: 1696
 };
 
 const SPRINT_BLOCK_PARTY_PREVIEW_IMAGE: Image = {
@@ -46,13 +46,13 @@ export const PROJECTS: Project[] = [
 			ICON_LIBRARY_PREVIEW_IMAGE,
 			{
 				src: "/assets/projects/icon-library/icon-library-1.png",
-				width: 5000,
-				height: 3750
+				width: 2000,
+				height: 1500
 			},
 			{
 				src: "/assets/projects/icon-library/icon-library-2.jpg",
-				width: 5000,
-				height: 3750
+				width: 2000,
+				height: 1500
 			}
 		]
 	},

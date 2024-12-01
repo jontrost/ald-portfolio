@@ -26,7 +26,8 @@
                     [ngSrc]="image.src"
                     [priority]="$index === 0"
                     [height]="image.height"
-                    [width]="image.width">
+                    [width]="image.width"
+                    [alt]="image.description">
             }
         }
         @if (project.detailsImages.length > 1) {

@@ -4,31 +4,36 @@ import type { Project } from "../models/project.model";
 const ICON_LIBRARY_PREVIEW_IMAGE: Image = {
 	src: "/assets/projects/icon-library/preview.png",
 	width: 2001,
-	height: 1696
+	height: 1696,
+	description: "A collection of icons for an icon library"
 };
 
 const SPRINT_BLOCK_PARTY_PREVIEW_IMAGE: Image = {
 	src: "/assets/projects/sprint-block-party/preview.png",
 	width: 1700,
-	height: 1700
+	height: 1700,
+	description: "A graphic for the Sprint Block Party corporate event"
 };
 
 const PUMPED_UP_KICKS_LYRIC_BOOK_PREVIEW_IMAGE: Image = {
 	src: "/assets/projects/pumped-up-kicks-lyric-book/preview.png",
 	width: 2041,
-	height: 1953
+	height: 1953,
+	description: "A collage of graphics for the Pumped Up Kicks lyric book"
 };
 
 const ALPHA_DELTA_PI_GRAPHICS_PREVIEW_IMAGE: Image = {
 	src: "/assets/projects/alpha-delta-pi-graphics/preview.png",
 	width: 500,
-	height: 500
+	height: 500,
+	description: "A graphic of a lemon for the LemonADPi promotional event"
 };
 
 const PAINTING_PREVIEW_IMAGE: Image = {
 	src: "/assets/projects/painting/preview.jpg",
 	width: 1876,
-	height: 2475
+	height: 2475,
+	description: "An oil painting of the downtown Saint Paul skyline"
 };
 
 export const PROJECTS: Project[] = [
@@ -47,12 +52,14 @@ export const PROJECTS: Project[] = [
 			{
 				src: "/assets/projects/icon-library/icon-library-1.png",
 				width: 2000,
-				height: 1500
+				height: 1500,
+				description: "A detailed subset of icons from an icon library"
 			},
 			{
 				src: "/assets/projects/icon-library/icon-library-2.jpg",
 				width: 2000,
-				height: 1500
+				height: 1500,
+				description: "An example of icons being used in a print publication"
 			}
 		]
 	},
@@ -70,38 +77,45 @@ export const PROJECTS: Project[] = [
 		previewImage: {
 			src: "/assets/projects/ethereal-dance/preview.jpg",
 			width: 1200,
-			height: 900
+			height: 900,
+			description: "A collage of printed graphics for the Ethereal Dance brand"
 		},
 		detailsImages: [
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-1.gif",
 				width: 1160,
-				height: 751
+				height: 751,
+				description: "An animation of dancers that simulates the movement of dance"
 			},
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-2.png",
 				width: 1781,
-				height: 1200
+				height: 1200,
+				description: "A graphic detailing the brand guidelines for the Ethereal Dance brand"
 			},
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-3.png",
 				width: 2000,
-				height: 934
+				height: 934,
+				description: "A graphic showcasing the colors and typography of the Ethereal Dance brand"
 			},
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-4.png",
 				width: 2000,
-				height: 1467
+				height: 1467,
+				description: "An example of a poster for the Ethereal Dance brand"
 			},
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-5.png",
 				width: 1886,
-				height: 1200
+				height: 1200,
+				description: "An example of an open trifold brochure for the Ethereal Dance brand"
 			},
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-6.png",
 				width: 1800,
-				height: 1500
+				height: 1500,
+				description: "An example of a closed trifold brochure for the Ethereal Dance brand"
 			}
 		]
 	},
@@ -118,53 +132,57 @@ export const PROJECTS: Project[] = [
 		previewImage: {
 			src: "/assets/projects/characters-of-carnival/preview.jpg",
 			width: 1200,
-			height: 900
+			height: 900,
+			description: "A photograph of the Characters of Carnival art exhibit"
 		},
 		detailsImages: [
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-1.jpg",
 				width: 1400,
-				height: 788
+				height: 788,
+				description: "A photograph of the Characters of Carnival art exhibit"
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-2.jpg",
 				width: 1400,
-				height: 933
+				height: 933,
+				description: "A photograph of the Characters of Carnival art exhibit taken from an angle"
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-3.jpg",
 				width: 1200,
-				height: 1800
+				height: 1800,
+				description: "A photograph zoomed in on the Highlander character of the Characters of Carnival art exhibit"
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-4.jpg",
 				width: 1200,
-				height: 1800
+				height: 1800,
+				description: "A photograph zoomed in on the John Bull character of the Characters of Carnival art exhibit"
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-5.jpg",
 				width: 1200,
-				height: 1800
+				height: 1800,
+				description: "A photograph zoomed in on the Skellihopper character of the Characters of Carnival art exhibit"
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-6.jpg",
 				width: 1200,
-				height: 1800
+				height: 1800,
+				description: "A photograph zoomed in on the Moko Jumbie character of the Characters of Carnival art exhibit"
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-7.jpg",
 				width: 1200,
-				height: 1800
-			},
-			{
-				src: "/assets/projects/characters-of-carnival/characters-of-carnival-8.jpg",
-				width: 1200,
-				height: 1800
+				height: 1800,
+				description: "A photograph zoomed in on the overview of the Characters of Carnival art exhibit"
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-9.jpg",
 				width: 1400,
-				height: 788
+				height: 788,
+				description: "A wide angle photograph of the Characters of Carnival art exhibit"
 			}
 		]
 	},
@@ -199,22 +217,26 @@ export const PROJECTS: Project[] = [
 			{
 				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-1.jpg",
 				width: 1614,
-				height: 712
+				height: 712,
+				description: "The cover page of the Pumped Up Kicks lyric book"
 			},
 			{
 				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-2.jpg",
 				width: 1142,
-				height: 718
+				height: 718,
+				description: "The first page of the Pumped Up Kicks lyric book, showcasing typography"
 			},
 			{
 				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-3.jpg",
 				width: 1142,
-				height: 712
+				height: 712,
+				description: "The second page of the Pumped Up Kicks lyric book, showcasing blurred imagery and typography"
 			},
 			{
 				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-4.jpg",
 				width: 1106,
-				height: 720
+				height: 720,
+				description: "A graphic of the Pumped Up Kicks lyric book that showcases chopped imagery and typography"
 			}
 		]
 	},
@@ -234,17 +256,20 @@ export const PROJECTS: Project[] = [
 			{
 				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-1.jpg",
 				width: 1570,
-				height: 1349
+				height: 1349,
+				description: "A photograph of LemonADPi stickers"
 			},
 			{
 				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-2.jpg",
 				width: 710,
-				height: 889
+				height: 889,
+				description: "A photograph of a banner painted for an Alpha Delta Pi event"
 			},
 			{
 				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-3.png",
 				width: 1400,
-				height: 1805
+				height: 1805,
+				description: "A campfire graphic for an Alpha Delta Pi event"
 			}
 		]
 	},

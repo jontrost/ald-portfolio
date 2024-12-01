@@ -23,10 +23,10 @@
                 <img
                     class="project-preview-image"
                     [ngSrc]="project.previewImage.src"
+                    [priority]="$index === selectedProjectPreviewIndex()"
                     [height]="project.previewImage.height"
                     [width]="project.previewImage.width"
-                    [alt]="project.previewImage.description"
-                    priority>
+                    [alt]="project.previewImage.description">
             }
         }
     </div>

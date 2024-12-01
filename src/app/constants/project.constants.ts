@@ -1,7 +1,6 @@
 import type { Image } from "../models/image.model";
 import type { Project } from "../models/project.model";
 
-// Compress the images before releasing
 const ICON_LIBRARY_PREVIEW_IMAGE: Image = {
 	src: "/assets/projects/icon-library/preview.png",
 	width: 2050,
@@ -10,8 +9,8 @@ const ICON_LIBRARY_PREVIEW_IMAGE: Image = {
 
 const SPRINT_BLOCK_PARTY_PREVIEW_IMAGE: Image = {
 	src: "/assets/projects/sprint-block-party/preview.png",
-	width: 2251,
-	height: 2251
+	width: 1700,
+	height: 1700
 };
 
 const PUMPED_UP_KICKS_LYRIC_BOOK_PREVIEW_IMAGE: Image = {
@@ -76,33 +75,33 @@ export const PROJECTS: Project[] = [
 		detailsImages: [
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-1.gif",
-				width: 0,
-				height: 0
+				width: 1160,
+				height: 751
 			},
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-2.png",
-				width: 0,
-				height: 0
+				width: 1781,
+				height: 1200
 			},
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-3.png",
-				width: 0,
-				height: 0
+				width: 2000,
+				height: 934
 			},
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-4.png",
-				width: 0,
-				height: 0
+				width: 2000,
+				height: 1467
 			},
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-5.png",
-				width: 0,
-				height: 0
+				width: 1886,
+				height: 1200
 			},
 			{
 				src: "/assets/projects/ethereal-dance/ethereal-dance-6.png",
-				width: 0,
-				height: 0
+				width: 1800,
+				height: 1500
 			}
 		]
 	},
@@ -118,54 +117,54 @@ export const PROJECTS: Project[] = [
         `,
 		previewImage: {
 			src: "/assets/projects/characters-of-carnival/preview.jpg",
-			width: 0,
-			height: 0
+			width: 1200,
+			height: 900
 		},
 		detailsImages: [
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-1.jpg",
-				width: 0,
-				height: 0
+				width: 1400,
+				height: 788
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-2.jpg",
-				width: 0,
-				height: 0
+				width: 1400,
+				height: 933
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-3.jpg",
-				width: 0,
-				height: 0
+				width: 1200,
+				height: 1800
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-4.jpg",
-				width: 0,
-				height: 0
+				width: 1200,
+				height: 1800
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-5.jpg",
-				width: 0,
-				height: 0
+				width: 1200,
+				height: 1800
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-6.jpg",
-				width: 0,
-				height: 0
+				width: 1200,
+				height: 1800
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-7.jpg",
-				width: 0,
-				height: 0
+				width: 1200,
+				height: 1800
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-8.jpg",
-				width: 0,
-				height: 0
+				width: 1200,
+				height: 1800
 			},
 			{
 				src: "/assets/projects/characters-of-carnival/characters-of-carnival-9.jpg",
-				width: 0,
-				height: 0
+				width: 1400,
+				height: 788
 			}
 		]
 	},
@@ -199,23 +198,23 @@ export const PROJECTS: Project[] = [
 			PUMPED_UP_KICKS_LYRIC_BOOK_PREVIEW_IMAGE,
 			{
 				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-1.jpg",
-				width: 0,
-				height: 0
+				width: 1614,
+				height: 712
 			},
 			{
 				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-2.jpg",
-				width: 0,
-				height: 0
+				width: 1142,
+				height: 718
 			},
 			{
 				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-3.jpg",
-				width: 0,
-				height: 0
+				width: 1142,
+				height: 712
 			},
 			{
 				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-4.jpg",
-				width: 0,
-				height: 0
+				width: 1106,
+				height: 720
 			}
 		]
 	},
@@ -234,18 +233,18 @@ export const PROJECTS: Project[] = [
 			ALPHA_DELTA_PI_GRAPHICS_PREVIEW_IMAGE,
 			{
 				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-1.jpg",
-				width: 0,
-				height: 0
+				width: 1570,
+				height: 1349
 			},
 			{
 				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-2.jpg",
-				width: 0,
-				height: 0
+				width: 710,
+				height: 889
 			},
 			{
 				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-3.png",
-				width: 0,
-				height: 0
+				width: 1400,
+				height: 1805
 			}
 		]
 	},

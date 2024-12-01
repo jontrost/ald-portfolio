@@ -23,7 +23,7 @@
                 <img
                     class="project-preview-image"
                     [ngSrc]="project.previewImage.src"
-                    [priority]="$index === 0"
+                    [priority]="$index === selectedProjectPreviewIndex()"
                     [height]="project.previewImage.height"
                     [width]="project.previewImage.width">
             }

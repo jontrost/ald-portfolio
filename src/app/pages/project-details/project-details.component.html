@@ -1,6 +1,5 @@
 <div class="page-container">
-    <!-- When back is clicked, highlight that project on landing page -->
-    <a class="back-link" routerLink="/">
+    <a class="back-link" routerLink="/" [state]="{ previousProject: project.route }">
         <ald-icon class="icon" icon="chevron-left"></ald-icon>
         Back
     </a>

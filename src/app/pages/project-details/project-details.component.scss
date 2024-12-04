@@ -2,13 +2,11 @@
 @use "../../../styles/typography";
 
 .page-container {
-    $divider-width: 0.375rem;
-
     height: 100%;
     width: 100%;
     display: grid; 
-    gap: 3rem; 
-    grid-template-columns: 25rem $divider-width minmax(0, 1fr); 
+    gap: 4rem; 
+    grid-template-columns: 25rem variables.$divider-width minmax(0, 1fr); 
     grid-template-rows: auto minmax(0, 1fr); 
     grid-template-areas:
         "back . ."
@@ -16,7 +14,7 @@
 
     @media only screen and (max-width: variables.$breakpoint-large) {
         grid-template-columns: minmax(0, 1fr); 
-        grid-template-rows: auto auto $divider-width minmax(0, 1fr); 
+        grid-template-rows: auto auto variables.$divider-width minmax(0, 1fr); 
         grid-template-areas:
             "back"
             "text"
@@ -62,7 +60,7 @@
 .divider {
     grid-area: divider;
     background-color: variables.$color-primary;
-    border-radius: 0.25rem;
+    border-radius: variables.$divider-border-radius;
 }
 
 .project-images {

@@ -1,7 +1,7 @@
 @use "../../../styles/variables";
 @use "../../../styles/typography";
 
-$large-spacing: 3rem;
+$large-spacing: 4rem;
 $small-spacing: 2rem;
 
 .page-container {
@@ -46,28 +46,14 @@ $small-spacing: 2rem;
 }
 
 .header-logo {
-    display: none;
-    height: 5rem;
-
-    @media only screen and (max-width: variables.$breakpoint-small) {
-        display: block;
-    }
-}
-
-.header-text {
-    line-height: 1;
-    white-space: nowrap;
-
-    @media only screen and (max-width: variables.$breakpoint-small) {
-        display: none;
-    }
+    height: 7rem;
 }
 
 .header-line {
-    height: 0.375rem;
     width: 100%;
+    height: variables.$divider-width;
+    border-radius: variables.$divider-border-radius;
     background-color: variables.$color-primary;
-    border-radius: 0.25rem;
 
     @media only screen and (max-width: variables.$breakpoint-small) {
         display: none;

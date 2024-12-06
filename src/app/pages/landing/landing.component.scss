@@ -1,13 +1,11 @@
 @use "../../../styles/variables";
 @use "../../../styles/typography";
 
-$spacing: 4rem;
-
 .page-container {
     height: 100%;
     width: 100%;
     display: grid;
-    gap: $spacing;
+    gap: variables.$breakpoint-large-padding;
     grid-template-columns: auto minmax(0, 1fr); 
     grid-template-rows: auto minmax(0, 1fr) auto; 
     grid-template-areas: 
@@ -18,7 +16,6 @@ $spacing: 4rem;
     @media only screen and (max-width: variables.$breakpoint-small) {
         display: flex;
         flex-direction: column;
-        gap: $spacing;
         align-items: center;
     }
 }
@@ -37,7 +34,7 @@ $spacing: 4rem;
     justify-content: center;
     align-self: flex-start;
     align-items: center;
-    gap: $spacing;
+    gap: variables.$breakpoint-large-padding;
 }
 
 .header-logo {

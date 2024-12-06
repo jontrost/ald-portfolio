@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     display: grid; 
-    gap: 4rem; 
+    gap: variables.$breakpoint-large-padding; 
     grid-template-columns: 25rem auto minmax(0, 1fr); 
     grid-template-rows: auto minmax(0, 1fr); 
     grid-template-areas:
@@ -18,7 +18,7 @@
     }
 
     @media only screen and (max-width: variables.$breakpoint-small) {
-        gap: 2rem;
+        gap: variables.$breakpoint-small-padding;
     }
 }
 
@@ -76,10 +76,15 @@
         "buttons"; 
 
     @media only screen and (max-width: variables.$breakpoint-large) {
+        padding-bottom: variables.$breakpoint-large-padding;
         grid-template-rows: auto minmax(0, 1fr); 
         grid-template-areas:
             "buttons"
             "image"; 
+    }
+
+    @media only screen and (max-width: variables.$breakpoint-small) {
+        padding-bottom: variables.$breakpoint-small-padding;
     }
 }
 

@@ -4,9 +4,13 @@
     display: block;
     height: 100%;
     width: 100%;
-    padding: 4rem;
+    padding: variables.$breakpoint-large-padding;
+
+    @media only screen and (max-width: variables.$breakpoint-large) {
+        overflow-y: auto;
+    }
 
     @media only screen and (max-width: variables.$breakpoint-small) {
-        padding: 2rem;
+        padding: variables.$breakpoint-small-padding;
     }
 }

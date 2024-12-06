@@ -6,20 +6,15 @@
     width: 100%;
     display: grid; 
     gap: 4rem; 
-    grid-template-columns: 25rem variables.$divider-width minmax(0, 1fr); 
+    grid-template-columns: 25rem auto minmax(0, 1fr); 
     grid-template-rows: auto minmax(0, 1fr); 
     grid-template-areas:
         "back . ."
         "text divider images"; 
 
     @media only screen and (max-width: variables.$breakpoint-large) {
-        grid-template-columns: minmax(0, 1fr); 
-        grid-template-rows: auto auto variables.$divider-width minmax(0, 1fr); 
-        grid-template-areas:
-            "back"
-            "text"
-            "divider"
-            "images"; 
+        display: flex;
+        flex-direction: column;
     }
 
     @media only screen and (max-width: variables.$breakpoint-small) {
@@ -59,8 +54,13 @@
 
 .divider {
     grid-area: divider;
+    width: variables.$divider-width;
     background-color: variables.$color-primary;
     border-radius: variables.$divider-border-radius;
+
+    @media only screen and (max-width: variables.$breakpoint-large) {
+        display: none;
+    }
 }
 
 .project-images {

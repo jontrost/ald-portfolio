@@ -3,7 +3,7 @@
 $font-scale: 1.15;
 $font-dynamic-size-screen-start-width: 20rem;
 $font-dynamic-size-screen-end-width: variables.$breakpoint-large;
-$font-size-body-min: 0.875rem;
+$font-size-body-min: 0.9375rem;
 $font-size-body-max: 1.1875rem;
 $font-size-small-min: calc($font-size-body-min / $font-scale);
 $font-size-small-max: calc($font-size-body-max / $font-scale);

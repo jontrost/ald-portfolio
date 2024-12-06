@@ -88,8 +88,8 @@ $spacing: 4rem;
 
     @media only screen and (max-width: variables.$breakpoint-small) {
         justify-content: flex-start;
-        gap: 1rem;
         align-items: center;
+        gap: 0.5rem;
     }
 }
 
@@ -113,8 +113,7 @@ $spacing: 4rem;
     }
 
     @media only screen and (max-width: variables.$breakpoint-small) {
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
+        padding: 0.5rem;
     }
 }
 

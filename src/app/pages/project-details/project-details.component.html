@@ -18,18 +18,7 @@
         <p>{{ project.description }}</p>
     </div>
     <div class="divider"></div>
-    <div class="project-images">
-        @for (image of project.detailsImages; track $index) {
-            @if ($index === currentImageIndex()) {
-                <img
-                    class="project-image"
-                    [ngSrc]="image.src"
-                    [priority]="$index === 0"
-                    [height]="image.height"
-                    [width]="image.width"
-                    [alt]="image.description">
-            }
-        }
+    <div class="project-images" #projectImages>
         @if (project.detailsImages.length > 1) {
             <div class="button-container">
                 <button class="image-selection-button" (click)="selectPreviousImage()">
@@ -41,6 +30,18 @@
                     <ald-icon class="icon" icon="chevron-right"></ald-icon>
                 </button>
             </div>
+        }
+        @for (image of project.detailsImages; track $index) {
+            @if ($index === currentImageIndex()) {
+                <img
+                    class="project-image"
+                    [ngSrc]="image.src"
+                    [priority]="$index === 0"
+                    [height]="image.height"
+                    [width]="image.width"
+                    [alt]="image.description"
+                    (click)="renderImageFullscreen()">
+            }
         }
     </div>
 </div>

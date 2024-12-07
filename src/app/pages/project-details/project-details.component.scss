@@ -68,12 +68,26 @@
     height: 100%;
     width: 100%;
     display: grid;
-    gap: 1.5rem;
+    gap: 2rem;
+    background-color: variables.$color-background;
     grid-template-columns: minmax(0, 1fr); 
     grid-template-rows: minmax(0, 1fr) auto; 
     grid-template-areas:
         "image"
-        "buttons"; 
+        "buttons";
+    
+    &:fullscreen {
+        padding-top: 2rem;
+        padding-bottom: 2rem;;
+        grid-template-rows: minmax(0, 1fr) auto; 
+        grid-template-areas:
+            "image"
+            "buttons";
+
+        & > .project-image {
+            align-self: center;
+        }
+    }
 
     @media only screen and (max-width: variables.$breakpoint-large) {
         padding-bottom: variables.$breakpoint-large-padding;

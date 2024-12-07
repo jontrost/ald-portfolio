@@ -1,9 +1,9 @@
-import { Component, type OnInit, inject, signal } from "@angular/core";
+import { NgOptimizedImage } from "@angular/common";
+import { Component, type ElementRef, type OnInit, ViewChild, inject, signal } from "@angular/core";
 import { ActivatedRoute, Router, RouterModule } from "@angular/router";
+import { IconComponent } from "../../components/icon/icon.component";
 import { PROJECTS } from "../../constants/project.constants";
 import type { Project } from "../../models/project.model";
-import { IconComponent } from "../../components/icon/icon.component";
-import { NgOptimizedImage } from "@angular/common";
 
 @Component({
 	selector: "ald-project-details",
@@ -12,6 +12,7 @@ import { NgOptimizedImage } from "@angular/common";
 	styleUrl: "./project-details.component.scss"
 })
 export class ProjectDetailsComponent implements OnInit {
+	@ViewChild("projectImages") projectImages: ElementRef<HTMLImageElement>;
 	readonly route = inject(ActivatedRoute);
 	readonly router = inject(Router);
 	currentImageIndex = signal<number>(0);
@@ -33,5 +34,9 @@ export class ProjectDetailsComponent implements OnInit {
 		this.currentImageIndex.update((currentIndex) =>
 			currentIndex + 1 === this.project.detailsImages.length ? 0 : currentIndex + 1
 		);
+	}
+
+	renderImageFullscreen() {
+		this.projectImages.nativeElement.requestFullscreen();
 	}
 }

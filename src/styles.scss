@@ -2,17 +2,17 @@
 @use "./styles/variables";
 @use "./styles/typography";
 
-html {
-    height: 100%;
-    width: 100%;
-}
-
 body {
     @extend %body;
-    height: 100%;
-    width: 100%;
+    height: 100dvh;
+    width: 100dvw;
     background-color: variables.$color-background;
     color: variables.$color-text;
+
+    @media only screen and (max-width: variables.$breakpoint-large) {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 h1 {

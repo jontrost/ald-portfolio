@@ -78,7 +78,7 @@
     
     &:fullscreen {
         padding-top: 2rem;
-        padding-bottom: 2rem;;
+        padding-bottom: 2rem;
         grid-template-rows: minmax(0, 1fr) auto; 
         grid-template-areas:
             "image"
@@ -90,15 +90,10 @@
     }
 
     @media only screen and (max-width: variables.$breakpoint-large) {
-        padding-bottom: variables.$breakpoint-large-padding;
         grid-template-rows: auto minmax(0, 1fr); 
         grid-template-areas:
             "buttons"
             "image"; 
-    }
-
-    @media only screen and (max-width: variables.$breakpoint-small) {
-        padding-bottom: variables.$breakpoint-small-padding;
     }
 }
 

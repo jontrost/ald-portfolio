@@ -15,18 +15,25 @@ const SPRINT_BLOCK_PARTY_PREVIEW_IMAGE: Image = {
 	description: "A graphic for the Sprint Block Party corporate event"
 };
 
-const PUMPED_UP_KICKS_LYRIC_BOOK_PREVIEW_IMAGE: Image = {
-	src: "/assets/projects/pumped-up-kicks-lyric-book/preview.png",
+const PUMPED_UP_KICKS_PREVIEW_IMAGE: Image = {
+	src: "/assets/projects/pumped-up-kicks/preview.png",
 	width: 2041,
 	height: 1953,
 	description: "A collage of graphics for the Pumped Up Kicks lyric book"
 };
 
-const ALPHA_DELTA_PI_GRAPHICS_PREVIEW_IMAGE: Image = {
-	src: "/assets/projects/alpha-delta-pi-graphics/preview.png",
+const ALPHA_DELTA_PI_PREVIEW_IMAGE: Image = {
+	src: "/assets/projects/alpha-delta-pi/preview.png",
 	width: 500,
 	height: 500,
 	description: "A graphic of a lemon for the LemonADPi promotional event"
+};
+
+const ONE_SWORD_SAGA_PREVIEW_IMAGE: Image = {
+	src: "/assets/projects/one-sword-saga/preview.png",
+	width: 2500,
+	height: 2500,
+	description: "An collage of graphics for the One Sword Saga book series"
 };
 
 const PAINTING_PREVIEW_IMAGE: Image = {
@@ -202,8 +209,8 @@ export const PROJECTS: Project[] = [
 		detailsImages: [SPRINT_BLOCK_PARTY_PREVIEW_IMAGE]
 	},
 	{
-		name: "Pumped Up Kicks Lyric Book",
-		route: "pumped-up-kicks-lyric-book",
+		name: "Pumped Up Kicks",
+		route: "pumped-up-kicks",
 		description: `
             This publication is centered around the song "Pumped Up Kicks" by Foster the People. The design concept
             is inspired by the song's reference to mental illness in adolescents and school shootings. The
@@ -211,29 +218,29 @@ export const PROJECTS: Project[] = [
             behind the lyrics in the song. The use of grayscale and brighter complementary colors evoke mixed
             emotions contrasted by dullness.        
         `,
-		previewImage: PUMPED_UP_KICKS_LYRIC_BOOK_PREVIEW_IMAGE,
+		previewImage: PUMPED_UP_KICKS_PREVIEW_IMAGE,
 		detailsImages: [
-			PUMPED_UP_KICKS_LYRIC_BOOK_PREVIEW_IMAGE,
+			PUMPED_UP_KICKS_PREVIEW_IMAGE,
 			{
-				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-1.jpg",
+				src: "/assets/projects/pumped-up-kicks/pumped-up-kicks-1.jpg",
 				width: 1614,
 				height: 712,
 				description: "The cover page of the Pumped Up Kicks lyric book"
 			},
 			{
-				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-2.jpg",
+				src: "/assets/projects/pumped-up-kicks/pumped-up-kicks-2.jpg",
 				width: 1142,
 				height: 718,
 				description: "The first page of the Pumped Up Kicks lyric book, showcasing typography"
 			},
 			{
-				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-3.jpg",
+				src: "/assets/projects/pumped-up-kicks/pumped-up-kicks-3.jpg",
 				width: 1142,
 				height: 712,
 				description: "The second page of the Pumped Up Kicks lyric book, showcasing blurred imagery and typography"
 			},
 			{
-				src: "/assets/projects/pumped-up-kicks-lyric-book/pumped-up-kicks-lyric-book-4.jpg",
+				src: "/assets/projects/pumped-up-kicks/pumped-up-kicks-4.jpg",
 				width: 1106,
 				height: 720,
 				description: "A graphic of the Pumped Up Kicks lyric book that showcases chopped imagery and typography"
@@ -241,8 +248,8 @@ export const PROJECTS: Project[] = [
 		]
 	},
 	{
-		name: "Alpha Delta Pi Graphics",
-		route: "alpha-delta-pi-graphics",
+		name: "Alpha Delta Pi",
+		route: "alpha-delta-pi",
 		description: `
             During my time as the Public Relations Chair for Alpha Delta Pi, I designed several graphics and
             banners to promote university events and messaging. One of my key projects was creating a graphic
@@ -250,26 +257,102 @@ export const PROJECTS: Project[] = [
             printed as stickers distributed at the event. To create the promotional banners, I utilized both
             composition design techniques and my technical painting skills.
         `,
-		previewImage: ALPHA_DELTA_PI_GRAPHICS_PREVIEW_IMAGE,
+		previewImage: ALPHA_DELTA_PI_PREVIEW_IMAGE,
 		detailsImages: [
-			ALPHA_DELTA_PI_GRAPHICS_PREVIEW_IMAGE,
+			ALPHA_DELTA_PI_PREVIEW_IMAGE,
 			{
-				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-1.jpg",
+				src: "/assets/projects/alpha-delta-pi/alpha-delta-pi-1.jpg",
 				width: 1570,
 				height: 1349,
 				description: "A photograph of LemonADPi stickers"
 			},
 			{
-				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-2.jpg",
+				src: "/assets/projects/alpha-delta-pi/alpha-delta-pi-2.jpg",
 				width: 710,
 				height: 889,
 				description: "A photograph of a banner painted for an Alpha Delta Pi event"
 			},
 			{
-				src: "/assets/projects/alpha-delta-pi-graphics/alpha-delta-pi-graphics-3.png",
+				src: "/assets/projects/alpha-delta-pi/alpha-delta-pi-3.png",
 				width: 1400,
 				height: 1805,
 				description: "A campfire graphic for an Alpha Delta Pi event"
+			}
+		]
+	},
+	{
+		name: "One Sword Saga",
+		route: "one-sword-saga",
+		description: `
+            For author Miriam Wade's One Sword Saga, I created dynamic character illustrations and a skyline
+            graphic illustration to promote the series on the author's social media and produce merchandise
+            for her promotional events. Additionally, I collaborated with the author to design an intricately
+            detailed map of the saga's universe, helping bring her vision to life and providing readers with
+            a visual guide to the characters' epic journey.
+        `,
+		previewImage: ONE_SWORD_SAGA_PREVIEW_IMAGE,
+		detailsImages: [
+			ONE_SWORD_SAGA_PREVIEW_IMAGE,
+			{
+				src: "/assets/projects/one-sword-saga/one-sword-saga-1.svg",
+				width: 1920,
+				height: 1080,
+				description: "An illustration of a city skyline for the One Sword Saga book series"
+			},
+			{
+				src: "/assets/projects/one-sword-saga/one-sword-saga-2.svg",
+				width: 216,
+				height: 288,
+				description: "An illustration of Guenivere, a character from the One Sword Saga book series"
+			},
+			{
+				src: "/assets/projects/one-sword-saga/one-sword-saga-3.svg",
+				width: 216,
+				height: 288,
+				description: "An illustration of Arthur, a character from the One Sword Saga book series"
+			},
+			{
+				src: "/assets/projects/one-sword-saga/one-sword-saga-4.svg",
+				width: 216,
+				height: 288,
+				description: "An illustration of the Excalibur sword from the One Sword Saga book series"
+			},
+			{
+				src: "/assets/projects/one-sword-saga/one-sword-saga-5.svg",
+				width: 216,
+				height: 288,
+				description: "An illustration of Mordred, a character from the One Sword Saga book series"
+			},
+			{
+				src: "/assets/projects/one-sword-saga/one-sword-saga-6.svg",
+				width: 216,
+				height: 288,
+				description: "An illustration of a dinosaur from the One Sword Saga book series"
+			},
+			{
+				src: "/assets/projects/one-sword-saga/one-sword-saga-7.svg",
+				width: 288,
+				height: 216,
+				description: "An illustration of an airship from the One Sword Saga book series"
+			},
+			{
+				src: "/assets/projects/one-sword-saga/one-sword-saga-8.jpg",
+				width: 2000,
+				height: 2500,
+				description: "An photograph of stickers featuring illustrations from the One Sword Saga book series"
+			},
+			{
+				src: "/assets/projects/one-sword-saga/one-sword-saga-9.jpg",
+				width: 1742,
+				height: 2500,
+				description: "A map of Avalon, the setting of the One Sword Saga book series"
+			},
+			{
+				src: "/assets/projects/one-sword-saga/one-sword-saga-10.jpg",
+				width: 2253,
+				height: 1267,
+				description:
+					"A photograph of a poster featuring a city skyline illustration from the One Sword Saga book series"
 			}
 		]
 	},

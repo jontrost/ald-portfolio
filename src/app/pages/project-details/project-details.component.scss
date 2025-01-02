@@ -105,6 +105,7 @@
     max-width: 100%;
     object-fit: contain;
     align-self: center;
+    cursor: pointer;
 
     @media only screen and (max-width: variables.$breakpoint-large) {
         align-self: flex-start;

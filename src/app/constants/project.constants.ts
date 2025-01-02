@@ -36,6 +36,13 @@ const ONE_SWORD_SAGA_PREVIEW_IMAGE: Image = {
 	description: "An collage of graphics for the One Sword Saga book series"
 };
 
+const THE_214_MAGAZINE_PREVIEW_IMAGE: Image = {
+	src: "/assets/projects/the-214-magazine/preview.svg",
+	width: 320,
+	height: 320,
+	description: "A logo for The 214 Magazine"
+};
+
 const PAINTING_PREVIEW_IMAGE: Image = {
 	src: "/assets/projects/painting/preview.jpg",
 	width: 1876,
@@ -353,6 +360,39 @@ export const PROJECTS: Project[] = [
 				height: 1267,
 				description:
 					"A photograph of a poster featuring a city skyline illustration from the One Sword Saga book series"
+			}
+		]
+	},
+	{
+		name: "The 214 Magazine",
+		route: "the-214-magazine",
+		description: `
+            I designed a versatile logo for The 214 Magazine, a digital magazine created by Kirsten Cucurella,
+            embodying multifaceted and inclusive identity. It reflects the brand's focus on community, critical
+            thinking, and creative expression, tailored for a young and diverse Dallas audience. The logo is used
+            seamlessly with a color palette I created, combining earth tones and bold accents like crimson and dark
+            cyan, aligning with the magazine's dynamic and aesthetic-forward approach.
+        `,
+		previewImage: THE_214_MAGAZINE_PREVIEW_IMAGE,
+		detailsImages: [
+			THE_214_MAGAZINE_PREVIEW_IMAGE,
+			{
+				src: "/assets/projects/the-214-magazine/the-214-magazine-1.jpg",
+				width: 1296,
+				height: 1561,
+				description: "The brand guide for The 214 Magazine"
+			},
+			{
+				src: "/assets/projects/the-214-magazine/the-214-magazine-2.jpg",
+				width: 1501,
+				height: 1500,
+				description: "A photograph of a purse with the logo for The 214 Magazine overlayed on it"
+			},
+			{
+				src: "/assets/projects/the-214-magazine/the-214-magazine-3.jpg",
+				width: 1501,
+				height: 1501,
+				description: "A photograph of a night life scene with the logo for The 214 Magazine overlayed on it"
 			}
 		]
 	},

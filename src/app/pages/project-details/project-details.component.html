@@ -5,17 +5,22 @@
     </a>
     <div class="project-text">
         <h1>{{ project.name }}</h1>
-        @if (project.paintingName != null || project.paintingMedium != null) {
-            <div class="painting-metadata">
-                @if (project.paintingName != null) {
-                    <i>{{ project.paintingName }}</i>
+        @let fineArtMetadata = project.detailsImages[currentImageIndex()].fineArtMetadata;
+        @if (fineArtMetadata != null) {
+            <div class="fine-art-metadata">
+                @if (fineArtMetadata.name != null && fineArtMetadata.medium != null) {
+                    <div>
+                        <i>{{ fineArtMetadata.name }}</i>
+                        <span>, {{ fineArtMetadata.medium }}</span>
+                    </div>
                 }
-                @if (project.paintingMedium != null) {
-                    <span>, {{ project.paintingMedium }}</span>
+                @if (fineArtMetadata.description != null) {
+                    <p>{{ fineArtMetadata.description }}</p>
                 }
             </div>
+        } @else {
+            <p>{{ project.description }}</p>
         }
-        <p>{{ project.description }}</p>
     </div>
     <div class="divider"></div>
     <div class="project-images" #projectImages>

@@ -118,6 +118,8 @@
     justify-content: space-evenly;
 }
 
-.painting-metadata {
+.fine-art-metadata {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }

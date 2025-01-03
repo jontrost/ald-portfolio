@@ -47,7 +47,12 @@ const PAINTING_PREVIEW_IMAGE: Image = {
 	src: "/assets/projects/painting/preview.jpg",
 	width: 1876,
 	height: 2475,
-	description: "An oil painting of the downtown Saint Paul skyline"
+	description: "An oil painting of the downtown Saint Paul skyline",
+	fineArtMetadata: {
+		name: "Downtown",
+		medium: "oil on loose canvas",
+		description: "My first painted work of realism in architecture, inspired by a photo taken by Josh Hild"
+	}
 };
 
 export const PROJECTS: Project[] = [
@@ -397,15 +402,89 @@ export const PROJECTS: Project[] = [
 		]
 	},
 	{
-		name: "Painting",
-		route: "painting",
+		name: "Fine Art",
+		route: "fine-art",
 		description: `
-            I wanted to commemorate my time living in the beautiful city of Saint Paul, Minnesota. This is my
-            first painted work of realism in architecture, inspired by a photo taken by Josh Hild.
+            REPLACE
         `,
-		paintingName: "Downtown",
-		paintingMedium: "oil on loose canvas",
 		previewImage: PAINTING_PREVIEW_IMAGE,
-		detailsImages: [PAINTING_PREVIEW_IMAGE]
+		detailsImages: [
+			PAINTING_PREVIEW_IMAGE,
+			{
+				src: "/assets/projects/painting/painting-1.jpg",
+				width: 2603,
+				height: 2603,
+				description: "A photograph of a series of fantasy landscape paintings",
+				fineArtMetadata: {
+					name: "Fantasy Series",
+					medium: "acrylic on pre-primed canvas",
+					description: "A series of four fantasy themed landscapes, inspired by images found on pinterest"
+				}
+			},
+			{
+				src: "/assets/projects/painting/painting-2.jpg",
+				width: 2500,
+				height: 1186,
+				description: "A photograph of a painting of several plants",
+				fineArtMetadata: {
+					name: "Growth",
+					medium: "acrylic on stretched canvas",
+					description: "Inspired by scientific drawings of plant species and the growth around me"
+				}
+			},
+			{
+				src: "/assets/projects/painting/painting-3.jpg",
+				width: 2000,
+				height: 2500,
+				description: "A close-up photograph of a painting of several plants",
+				fineArtMetadata: {
+					name: "Growth",
+					medium: "acrylic on stretched canvas",
+					description: "Inspired by scientific drawings of plant species and the growth around me"
+				}
+			},
+			{
+				src: "/assets/projects/painting/painting-4.jpg",
+				width: 2500,
+				height: 2000,
+				description: "A photograph of a painting of a cup of coffee and a painting of an old woman",
+				fineArtMetadata: {
+					name: "Caffè e Donna",
+					medium: "oil on stretched canvas",
+					description: "Two photographs taken in Rome, painted as a diptych"
+				}
+			},
+			{
+				src: "/assets/projects/painting/painting-5.jpg",
+				width: 1581,
+				height: 1700,
+				description: "A photograph of a charcoal sketch of a ballerina",
+				fineArtMetadata: {
+					name: "Dancer Mastercopy",
+					medium: "charcoal on newsprint",
+					description: "Based on the original drawing by Edgar Degas"
+				}
+			},
+			{
+				src: "/assets/projects/painting/painting-6.jpg",
+				width: 1795,
+				height: 2081,
+				description: "A photograph of a colorless still-life painting",
+				fineArtMetadata: {
+					name: "Grayscale Still Life",
+					medium: "oil on stretched canvas"
+				}
+			},
+			{
+				src: "/assets/projects/painting/painting-7.jpg",
+				width: 1943,
+				height: 2206,
+				description: "A photograph of a colorful still-life painting",
+				fineArtMetadata: {
+					name: "Color Still Life",
+					medium: "oil on stretched canvas"
+				}
+			}
+		]
 	}
 ];

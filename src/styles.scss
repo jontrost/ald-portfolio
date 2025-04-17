@@ -8,11 +8,6 @@ body {
     width: 100dvw;
     background-color: variables.$color-background;
     color: variables.$color-text;
-
-    @media only screen and (max-width: variables.$breakpoint-large) {
-        height: 100%;
-        width: 100%;
-    }
 }
 
 h1 {

@@ -4,5 +4,5 @@ import { PreloadAllModules, provideRouter, withPreloading, withViewTransitions }
 import { routes } from "./app.routes";
 
 export const appConfig: ApplicationConfig = {
-	providers: [provideRouter(routes, withViewTransitions(), withPreloading(PreloadAllModules))]
+    providers: [provideRouter(routes, withViewTransitions(), withPreloading(PreloadAllModules))]
 };

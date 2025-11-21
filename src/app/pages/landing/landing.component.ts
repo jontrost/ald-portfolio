@@ -21,7 +21,7 @@ export class LandingComponent implements OnInit {
 
     ngOnInit() {
         const previousProjectIndex = this.projects.findIndex(
-            (project) => project.route === this.router.lastSuccessfulNavigation?.extras.state?.previousProject
+            (project) => project.route === this.router.lastSuccessfulNavigation()?.extras.state?.previousProject
         );
         this.selectProjectPreview(previousProjectIndex === -1 ? 0 : previousProjectIndex);
     }

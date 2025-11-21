@@ -1,10 +1,9 @@
-import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 
 @Component({
     selector: "ald-root",
-    imports: [CommonModule, RouterOutlet],
+    imports: [RouterOutlet],
     templateUrl: "./app.component.html",
     styleUrls: ["./app.component.scss"]
 })
